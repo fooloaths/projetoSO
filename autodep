@@ -1,0 +1,31 @@
+no_mt_10_files.o: bateria_mt/no_mt_10_files.c \
+ bateria_mt/../fs/operations.h bateria_mt/../fs/config.h \
+ bateria_mt/../fs/state.h
+mt_test_250_reads_same_file.o: bateria_mt/mt_test_250_reads_same_file.c \
+ bateria_mt/../fs/operations.h bateria_mt/../fs/config.h \
+ bateria_mt/../fs/state.h
+mt_test_10_times_same_file.o: bateria_mt/mt_test_10_times_same_file.c \
+ bateria_mt/../fs/operations.h bateria_mt/../fs/config.h \
+ bateria_mt/../fs/state.h
+no_mt_10_times.o: bateria_mt/no_mt_10_times.c \
+ bateria_mt/../fs/operations.h bateria_mt/../fs/config.h \
+ bateria_mt/../fs/state.h
+mt_test_10_files.o: bateria_mt/mt_test_10_files.c \
+ bateria_mt/../fs/operations.h bateria_mt/../fs/config.h \
+ bateria_mt/../fs/state.h
+write_10_blocks_big.o: tests/write_10_blocks_big.c \
+ tests/../fs/operations.h tests/../fs/config.h tests/../fs/state.h
+copy_to_external_simple.o: tests/copy_to_external_simple.c \
+ fs/operations.h fs/config.h fs/state.h
+write_10_blocks_spill.o: tests/write_10_blocks_spill.c \
+ tests/../fs/operations.h tests/../fs/config.h tests/../fs/state.h
+write_10_blocks_simple.o: tests/write_10_blocks_simple.c \
+ tests/../fs/operations.h tests/../fs/config.h tests/../fs/state.h
+write_more_than_10_blocks_simple.o: \
+ tests/write_more_than_10_blocks_simple.c tests/../fs/operations.h \
+ tests/../fs/config.h tests/../fs/state.h
+test1.o: tests/test1.c fs/operations.h fs/config.h fs/state.h
+copy_to_external_errors.o: tests/copy_to_external_errors.c \
+ fs/operations.h fs/config.h fs/state.h
+state.o: fs/state.c fs/state.h fs/config.h
+operations.o: fs/operations.c fs/operations.h fs/config.h fs/state.h
