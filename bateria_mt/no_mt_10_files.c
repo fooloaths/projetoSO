@@ -2,9 +2,9 @@
 #include <assert.h>
 #include <string.h>
 
-#define COUNT 80
+#define COUNT 40
 #define SIZE 256
-#define LOOP_SIZE 20
+#define LOOP_SIZE 10
 
 /**
    This test fills in a new file up to 10 blocks via multiple writes, 

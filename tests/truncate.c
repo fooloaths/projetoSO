@@ -15,6 +15,7 @@ int main() {
 
     /* Create File */
 
+
     f = tfs_open(path, TFS_O_CREAT);
     assert(f != -1);
 
@@ -45,7 +46,6 @@ int main() {
     assert(tfs_close(f) != -1);
 
     /* Open in truncate */
-
     f = tfs_open(path, TFS_O_TRUNC);
     assert(f != -1);
 
@@ -76,6 +76,8 @@ int main() {
     assert(tfs_close(f) != -1);
 
     /* Open in append */
+
+
 
     f = tfs_open(path, TFS_O_APPEND);
     assert(f != -1);

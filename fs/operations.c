@@ -62,18 +62,22 @@ int tfs_open(char const *name, int flags) {
                 if (inode->indirection_block != -1) {
                     /* Has indirect data blocks */
                     if (inode_free_indirect_blocks(inode) == -1) {
+                        pthread_rwlock_unlock(&inode->i_lock);
                         return 1;
                     }
                 }
                 if (inode_free_direct_blocks(inode) == -1) {
+                    pthread_rwlock_unlock(&inode->i_lock);
                     return -1;
                 }
             }
             inode->i_data_block = (int *) realloc(inode->i_data_block, sizeof(int));
             if (inode->i_data_block == NULL) {
+                pthread_rwlock_unlock(&inode->i_lock);
                 return -1;
             }
             if (inode_alloc_first_block(inum) == -1) {
+                pthread_rwlock_unlock(&inode->i_lock);
                 return -1;
             }
             pthread_rwlock_unlock(&inode->i_lock);

@@ -3,9 +3,9 @@
 #include <string.h>
 #include <pthread.h>
 
-#define COUNT 80
+#define COUNT 40
 #define SIZE 256
-#define LOOP_SIZE 20
+#define LOOP_SIZE 10
 
 /**
    Opens LOOP_SIZE threads, each writing to a different file

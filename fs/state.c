@@ -230,7 +230,7 @@ int inode_create(inode_type n_type) {
  *  1 if successful, -1 otherwise
  */
 int inode_free_direct_blocks(inode_t *inode) {
-    for (size_t i = 0; i < DIRECT_BLOCKS_COUNT; i++) {
+    for (size_t i = 0; i < inode->number_of_blocks; i++) {
 
 
         if (data_block_free(inode->i_data_block[i]) == -1) {
