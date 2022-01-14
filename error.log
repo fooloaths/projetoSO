@@ -1,4 +1,0 @@
-mt_test_100_reads_same_file: bateria_mt/mt_test_100_reads_same_file.c:31: thread_func: Assertion `memcmp(input, output, input_size) == 0' failed.
-mt_test_100_reads_same_file: bateria_mt/mt_test_100_reads_same_file.c:31: thread_func: Assertion `memcmp(input, output, input_size) == 0' failed.
-Aborted
-make: *** [Makefile:124: run_mt] Error 134
