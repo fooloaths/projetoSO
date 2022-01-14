@@ -1,0 +1,4 @@
+Escolhemos estes 3 testes:
+mt_test_10_files
+mt_test_10_times_same_file
+mt_test_100_reads_same_file
